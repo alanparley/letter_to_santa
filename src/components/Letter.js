@@ -1,6 +1,11 @@
-const Letter = () => {
+import { Children } from "react";
+
+const Letter = ({ author, children }) => {
     return (
-        <li>I'm a letter</li>
+        <li>
+            <p>{author}</p>
+            <p>{children}</p>
+        </li>
     );
 };
 
